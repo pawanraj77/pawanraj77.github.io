@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dating Website</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        color: white;
+        font-family: 'Patua One', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('couple.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid white; */
+        position: absolute;
+        left: 40px;
+        top: 15px;
+    }
+
+    .left img {
+        width: 90px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .center {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        /* border: 2px solid white; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px 30px;
+
+    }
+
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid white; */
+    }
+
+    .btn {
+        font-family: 'Patua One', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 140px 80px;
+        padding: 25px;
+        width: 30%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Patua One', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 405px;
+        margin: 10px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="h.png" alt="">
+            <div>Valentine Love</div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Love Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Become the loving couple now :</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
